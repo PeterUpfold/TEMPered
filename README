@@ -1,3 +1,20 @@
+
+=============================================================================
+
+This is a fork of edorfaus/TEMPered containing an **extremely** hacky script,
+which is a copy of hid-query.c, hacked just enough to spit out a temperature
+from the particular sensor that I own (ID 413d:2107)
+
+Do not rely on this extremely poor quality hack -- I am not a C programmer at
+the time of writing! :)
+
+I had similar problems to digiboule: https://github.com/edorfaus/TEMPered/issues/51
+This is essentially the same hack that digiboule explained in that issue, but
+I have copied it to a new script. Thanks to digiboule and edorfaus!
+
+
+=============================================================================
+
 This project is a C implementation of a library and program to read all the
 various types of TEMPer thermometer and hygrometer USB devices, as produced by
 RDing Technology and sold under the name PCsensor.

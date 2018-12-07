@@ -18,6 +18,10 @@ endif()
 add_executable(hid-query hid-query.c ${HIDAPI_STATIC_OBJECT})
 target_link_libraries(hid-query ${HIDAPI_LINK_LIBS})
 
+add_executable(simple-temp-readout simple-temp-readout.c ${HIDAPI_STATIC_OBJECT})
+target_link_libraries(simple-temp-readout ${HIDAPI_LINK_LIBS})
+
+
 add_executable(tempered-exe tempered.c ${HIDAPI_STATIC_OBJECT})
 set_target_properties(tempered-exe PROPERTIES OUTPUT_NAME tempered)
 target_link_libraries(tempered-exe
